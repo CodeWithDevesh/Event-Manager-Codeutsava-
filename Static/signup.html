@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Signup</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <div class="input-container">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="input-container">
+                <label for="rollno">Roll Number</label>
+                <input type="text" id="rollno" name="rollno" required>
+            </div>
+            <div class="input-container">
+                <label for="branch">Branch</label>
+                <select id="branch" name="branch" required>
+                    <option value="cs">Computer Science</option>
+                    <option value="it">Information Technology</option>
+                    <option value="elec">Electrical</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="mech">Mechanical</option>
+                    <option value="cv">Civil</option></select>
+            </div>
+            
+            <div class="input-container">
+                <label for="year">
+                     Year
+                </label>
+                <select class="year" id="year" name="Year" required>
+                    <option value="first">1st</option>
+                    <option value="second">2nd</option>
+                    <option value="third">3rd</option>
+                    <option value="fourth">4th</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label for="password">
+                    Password
+                </label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        Already have an account??
+        <a href="login.html">Login</a>
+    </div>
+</body>
+</html>
