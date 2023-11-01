@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // MongoDB connection
 const MongoClient = mongodb.MongoClient;
 const mongoUrl = 'mongodb://localhost:27017'; // Replace with your MongoDB connection URL
-const dbName = 'your_db_name'; // Replace with your database name
+const dbName = 'EventManager'; // Replace with your database name
 
 // Serve the HTML and CSS files
 app.use(express.static('static'));
