@@ -11,26 +11,29 @@
 <body>
     <div class="container">
         <h2>Login</h2>
-        <form action="login.js" method="POST">
-            
-                <div class="input_container">
-                    <input type="text" name="username" placeholder="Username" required>
-                </div>
-                <div class="input_container">
-                    <input type="password" name="password" placeholder="Password" required>
-                </div>
-                <button type="submit">Login</button>
-            
+
+        <form id="login-form" method="POST">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="submit" value="Log In">
             <div>
                 <p id="noaccount">Don't have a account?<span>
                         <a href="signup.html">Sign up</a></span></p>
+                        <a href="signup.html">Sign up</a></span></p>
+            </div>
+            <div>
+
             </div>
             <div>
 
             </div>
 
         </form>
+
+        <h2 id="error-message"></h2>
+
     </div>
-    </body>
+    <script src="login.js"></script>
+</body>
 
 </html>
