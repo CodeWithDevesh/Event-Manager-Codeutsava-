@@ -4,7 +4,7 @@
 <head>
     <title>Login Page</title>
     <link rel="stylesheet" href="styles.css">
-    
+
 
 </head>
 
@@ -13,19 +13,18 @@
         <h2>Login</h2>
 
         <form id="login-form" method="POST">
-            <input type="text" id="username" placeholder="Username" required>
-            <input type="password" id="password" placeholder="Password" required>
-            <input type="submit" value="Log In">
+            <div class="input_container">
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            <div class="input_container">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="input_container">
+                <button type="submit" value="Log In">Login</button>
+            </div>
             <div>
                 <p id="noaccount">Don't have a account?<span>
                         <a href="signup.html">Sign up</a></span></p>
-                        <a href="signup.html">Sign up</a></span></p>
-            </div>
-            <div>
-
-            </div>
-            <div>
-
             </div>
 
         </form>
