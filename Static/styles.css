@@ -9,3 +9,59 @@
     text-align: center;
     margin: 0 auto;
 }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.input_container {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.error-message {
+    color: #ff0000;
+    margin-top: 10px;
+}

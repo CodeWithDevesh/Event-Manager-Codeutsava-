@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .calendar {
+    width: 600px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .calendar-header {
+    background-color: #4285f4;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .prev-month-button, .next-month-button {
+    cursor: pointer;
+  }
+  
+  .current-month {
+    font-size: 20px;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Add styling for calendar days and events as needed */
+  
+  
