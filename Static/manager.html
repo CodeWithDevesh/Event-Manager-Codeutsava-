@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Management</title>
+  <style>
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      border: 1px solid #ccc;
+      margin: 5px;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .remove {
+      cursor: pointer;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Administrator Management</h1>
+  <ul>
+    <li>
+      <span><strong>Username:</strong> admin1</span>
+      <span><strong>Branch:</strong> Computer Science</span>
+      <span><strong>Year:</strong> 3rd</span>
+      <span><strong>Role in Clubs:</strong> President</span>
+      <span class="remove" onclick="removeAdmin(this)">Remove</span>
+    </li>
+    <li>
+      <span><strong>Username:</strong> admin2</span>
+      <span><strong>Branch:</strong> Electrical Engineering</span>
+      <span><strong>Year:</strong> 2nd</span>
+      <span><strong>Role in Clubs:</strong> Treasurer</span>
+      <span class="remove" onclick="removeAdmin(this)">Remove</span>
+    </li>
+    <li>
+      <span><strong>Username:</strong> admin3</span>
+      <span><strong>Branch:</strong> Business Administration</span>
+      <span><strong>Year:</strong> 4th</span>
+      <span><strong>Role in Clubs:</strong> Secretary</span>
+      <span class="remove" onclick="removeAdmin(this)">Remove</span>
+    </li>
+    <li>
+      <span><strong>Username:</strong> admin4</span>
+      <span><strong>Branch:</strong> Mechanical Engineering</span>
+      <span><strong>Year:</strong> 3rd</span>
+      <span><strong>Role in Clubs:</strong> VP</span>
+      <span class="remove" onclick="removeAdmin(this)">Remove</span>
+    </li>
+    <li>
+      <span><strong>Username:</strong> admin5</span>
+      <span><strong>Branch:</strong> Chemistry</span>
+      <span><strong>Year:</strong> 2nd</span>
+      <span><strong>Role in Clubs:</strong> Event Coordinator</span>
+      <span class="remove" onclick="removeAdmin(this)">Remove</span>
+    </li>
+    <li>
+      <span><strong>Username:</strong> admin6</span>
+      <span><strong>Branch:</strong> Civil Engineering</span>
+      <span><strong>Year:</strong> 4th</span>
+      <span><strong>Role in Clubs:</strong> Marketing Director</span>
+      <span class="remove" onclick="removeAdmin(this)">Remove</span>
+    </li>
+    <li>
+      <span><strong>Username:</strong> admin7</span>
+      <span><strong>Branch:</strong> Biology</span>
+      <span><strong>Year:</strong> 2nd</span>
+      <span><strong>Role in Clubs:</strong> Treasurer</span>
+      <span class="remove" onclick="removeAdmin(this)">Remove</span>
+    </li>
+    <li>
+      <span><strong>Username:</strong> admin8</span>
+      <span><strong>Branch:</strong> Physics</span>
+      <span><strong>Year:</strong> 3rd</span>
+      <span><strong>Role in Clubs:</strong> President</span>
+      <span class="remove" onclick="removeAdmin(this)">Remove</span>
+    </li>
+    <li>
+      <span><strong>Username:</strong> admin9</span>
+      <span><strong>Branch:</strong> Psychology</span>
+      <span><strong>Year:</strong> 4th</span>
+      <span><strong>Role in Clubs:</strong> Secretary</span>
+      <span class="remove" onclick="removeAdmin(this)">Remove</span>
+    </li>
+    <li>
+      <span><strong>Username:</strong> admin10</span>
+      <span><strong>Branch:</strong> Information Technology</span>
+      <span><strong>Year:</strong> 2nd</span>
+      <span><strong>Role in Clubs:</strong> Event Coordinator</span>
+      <span class="remove" onclick="removeAdmin(this)">Remove</span>
+    </li>
+    <!-- Add more admins as needed -->
+  </ul>
+
+  <script>
+    function removeAdmin(element) {
+      const listItem = element.parentElement;
+      listItem.remove();
+    }
+  </script>
+</body>
+</html>
