@@ -24,9 +24,12 @@ const renderCalendar = () => {
 
     for (let i = 1; i <= lastDateofMonth; i++) { // creating li of all days of current month
         // adding active class to li if the current day, month, and year matched
-        let isToday = i === date.getDate() && currMonth === new Date().getMonth()
+        let isSelected = i === date.getDate() && currMonth === new Date().getMonth()
             && currYear === new Date().getFullYear() ? "active" : "";
-        liTag += `<li class="${isToday}">${i}</li>`;
+        liTag += `<li class="${isSelected}">${i}</li>`;
+
+        
+
     }
 
     for (let i = lastDayofMonth; i < 6; i++) { // creating li of next month first days
@@ -52,4 +55,6 @@ prevNextIcon.forEach(icon => { // getting prev and next icons
         }
         renderCalendar(); // calling renderCalendar function
     });
+
+    icon.addEventListener("double")
 });
