@@ -9,6 +9,7 @@
     text-align: center;
     margin: 0 auto;
 }
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -69,4 +70,3 @@ button {
 .input_container{
     margin: 20px 0;
 }
-
