@@ -28,8 +28,22 @@
                     <option value="mech">Mechanical</option>
                     <option value="cv">Civil</option>
             </div>
+            
             <div class="input-container">
-                <label for="password">Password</label>
+                <label for="year">
+                    Study Year
+                </label>
+                <select class="year" id="year" name="year" required>
+                    <option value="first">1st</option>
+                    <option value="second">2nd</option>
+                    <option value="third">3rd</option>
+                    <option value="fourth">4th</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label for="password">
+                    Password
+                </label>
                 <input type="password" id="password" name="password" required>
             </div>
             <button type="submit">Sign Up</button>
