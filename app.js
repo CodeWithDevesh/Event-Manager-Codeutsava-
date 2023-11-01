@@ -13,7 +13,7 @@ const mongoUrl = 'mongodb://localhost:27017'; // Replace with your MongoDB conne
 const dbName = 'your_db_name'; // Replace with your database name
 
 // Serve the HTML and CSS files
-app.use(express.static('public'));
+app.use(express.static('static'));
 
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
