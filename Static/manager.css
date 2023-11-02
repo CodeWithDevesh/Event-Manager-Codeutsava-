@@ -3,7 +3,10 @@ h1{
 
 }
 
-
+.heading{
+    background-color: #E6E4E4;
+    border-radius: 40px;
+}
 .remove {
     cursor: pointer;
     color: red;
