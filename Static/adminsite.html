@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <body>
+        <h1 id="title">College event management-admin panel</h1>
+        <h3 id="filter">
+            Filters
+        </h3>
+        <input type="date" name="My name">
+        
+
+        <div>
+            <strong>Year:</strong><input type="checkbox" name="year">First<input type="checkbox"
+                name="year">Second<input type="checkbox" name="year">third<input type="radio" name="year">Fourth
+        </div>
+        <div>
+            <strong>Branch:</strong><input type="checkbox" name="branch">CSE<input type="checkbox"
+                name="branch">IT<input type="checkbox" name="branch">ECE<input type="checkbox" name="branch">EE<input
+                type="radio" name="branch">other
+        </div>
+        <div>
+            <strong>Domains:</strong><input type="checkbox" name="domain">Clubs<input type="checkbox"
+                name="domain">Committies<input type="checkbox" name="domain">Academics
+        </div>
+    
+
+
+
+    <div class="container">
+        
+        <h2 id="eventheading">Events list</h2>
+        <ul id="event-list">
+            <li class="event">
+                <h3>Event 1</h3>
+                <p>Date: 2023-11-10</p>
+                <p>Venue:CCC NITRR</p>
+                <p>Description: This is the description of Event 1.</p>
+            </li>
+            <li class="event">
+                <h3>Event 2</h3>
+                <p>Date: 2023-11-15</p>
+                <p>venue:CCC NITRR</p>
+                <p>Description: This is the description of Event 2.</p>
+
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- More events will be listed here  -->
+
+    <div class="container2">
+        <h2 class="heading">Yours List</h2>
+        <ul id="yourslist">
+            <li class="event">
+                <h3>Event 1</h3>
+                
+                <div>
+                    <label for="Venue">Venue:</label>
+                    <input type="text" name="venue" id="Venue">
+                </div>
+                <div>
+                    <label for="Eventdescr">Description:</label>
+                    <textarea name="eventdescr" id="Eventdescr"></textarea>
+                </div>
+                <button>Edit</button>
+                <button>Delete</button>
+            </li>
+            <li class="event">
+                <h3>Event 2</h3>
+               
+                <div>
+                    <label for="Venue">Venue:</label>
+                    <input type="text" name="venue" id="Venue">
+                </div>
+                <div>
+                    <label for="Eventdescr">Description:</label>
+                    <textarea name="eventdescr" id="Eventdescr"></textarea>
+                </div>
+                <button>Edit</button>
+                <button>Delete</button>
+            </li>
+        </ul>
+        <li class="event" id="addevent">
+            <button>Add event</button>
+        </li>
+    </div>
+
+</body>
+
+
+<!-- <div>
+            THIS WILL SHOW ON CLICKING ADD EVENT
+            <h2>Create a New Event</h2>
+            <form action="process_event.php" method="post">
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" name="event-name" required><br><br>
+    
+                <label for="event-date">Event Date:</label>
+                <input type="date" id="event-date" name="event-date" required><br><br>
+    
+                <label for="event-description">Event Description:</label><br>
+                <textarea id="event-description" name="event-description" rows="4" required></textarea><br><br>
+    
+                <input type="submit" value="Create Event">
+            </form>
+        </div> -->
+
+
+<script src="adminsite_script.js"></script>
+</body>
+
+</html>
