@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Calendar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .calendar {
+            max-width: 400px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .calendar table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .calendar th, .calendar td {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .calendar th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .calendar td {
+            cursor: pointer;
+        }
+
+        .calendar .current-day {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .calendar .prev-month,
+        .calendar .next-month {
+            color: #ccc;
+        }
+
+        .calendar .prev-month:hover,
+        .calendar .next-month:hover {
+            background-color: #eee;
+        }
+
+        .calendar .today {
+            background-color: #f1c40f;
+        }
+    </style>
+</head>
+<body>
+    <div class="calendar">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="7">November 2023</th>
+                </tr>
+                <tr>
+                    <th class="prev-month">&#9665;</th>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th class="next-month">&#9655;</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function generateCalendar(year, month) {
+            const calendarBody = document.querySelector('.calendar tbody');
+            calendarBody.innerHTML = '';
+
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+            let date = new Date(year, month, 1);
+            while (date.getMonth() === month) {
+                const cell = document.createElement('td');
+                cell.textContent = date.getDate();
+                if (date.toDateString() === new Date().toDateString()) {
+                    cell.classList.add('today');
+                }
+                calendarBody.appendChild(cell);
+
+                if (date.getDay() === 6) {
+                    calendarBody.appendChild(document.createElement('tr'));
+                }
+
+                date.setDate(date.getDate() + 1);
+            }
+        }
+
+        const today = new Date();
+        generateCalendar(today.getFullYear(), today.getMonth());
+    </script>
+</body>
+</html>

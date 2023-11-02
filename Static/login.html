@@ -1,81 +1,38 @@
-
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>Login Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
+    <link rel="stylesheet" href="styles.css">
 
-        .login-container {
-            width: 330px;
-            margin: 0 auto;
-            padding:20px;
-            background: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        
-        
-        
 
-        h2 {
-            text-align: center;
-        }
-
-        input[type="text"],
-        input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
-
-        input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            background: #007BFF;
-            border: none;
-            border-radius: 3px;
-            color: #fff;
-            cursor: pointer;
-        }
-
-        #noaccount{
-            text-align:center;
-            font-size:15px;
-            margin:5px;
-        }
-
-        
-        
-    </style>
 </head>
 
 <body>
-    <div class="login-container">
+    <div class="container">
         <h2>Login</h2>
-        
 
-        
-        <form action="login.php" method="POST">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Log In">
+        <form id="login-form" method="POST">
+            <div class="input_container">
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            <div class="input_container">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="input_container">
+                <button type="submit" value="Log In">Login</button>
+            </div>
             <div>
                 <p id="noaccount">Don't have a account?<span>
-                    <a href="signup.html">Sign up</a></span></p>
+                        <a href="signup.html">Sign up</a></span></p>
             </div>
-         <div>
-            
-         </div>
 
         </form>
+
+        <h2 id="error-message"></h2>
+
     </div>
-    < </body>
+    <script src="login.js"></script>
+</body>
 
 </html>
