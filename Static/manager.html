@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Admin Management</title>
   <style>
@@ -22,45 +23,28 @@
     }
   </style>
 </head>
+
 <body>
   <h1>Administrator Management</h1>
-  <table border="1">
+  <table id="table">
     <tr>
-        <th>Admin Name</th>
-        <th>Branch</th>
-        <th>Year</th>
-        <th>Club/Committee</th>
-        <th>role</th>
-        <th></th>
+      <th>Admin Name</th>
+      <th>Branch</th>
+      <th>Year</th>
+      <th>role</th>
+      <th>club/committee</th>
+      
+      <th><button id="addbtn" onclick="add()">Add</button></th>
+      <th></th>
     </tr>
-    <tr>
-        <td>admin1</td>
-        <td>IT</td>
-        <td>1</td>
-        <td>TCP</td>
-        <td>Volunteer</td>
-        <td><button>Remove</button></td>
     </tr>
-    <tr>
-        <td>admin1</td>
-        <td>CS</td>
-        <td>2</td>
-        <td>Raga</td>
-        <td>CEO</td>
+  </table>
 
-    </tr>
-    <tr>
-        <td>Row 3, Cell 1</td>
-        <td>Row 3, Cell 2</td>
-        <td>Row 3, Cell 3</td>
-    </tr>
-  
+  <script src="manager_script.js">
+   
 
-  <script>
-    function removeAdmin(element) {
-      const listItem = element.parentElement;
-      listItem.remove();
-    }
+
   </script>
 </body>
+
 </html>
