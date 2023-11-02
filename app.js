@@ -50,7 +50,7 @@ async function login(req, res) {
         console.log(result);
         res.status(200);
 
-        if(result.role == 'Manager')
+        if(result.role == 'manager')
             return res.redirect('/manager.html');
         else if(result.role == 'Admin')
             return res.redirect('/adminsite.html');
