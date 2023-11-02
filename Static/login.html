@@ -12,12 +12,12 @@
     <div class="container">
         <h2>Login</h2>
 
-        <form id="login-form" method="POST">
+        <form id="login-form" action="/login" method="POST">
             <div class="input_container">
-                <input type="text" id="username" placeholder="Username" required>
+                <input type="text" name="username" placeholder="Username" required>
             </div>
             <div class="input_container">
-                <input type="password" id="password" placeholder="Password" required>
+                <input type="password" name="password" placeholder="Password" required>
             </div>
             <div class="input_container">
                 <button type="submit" value="Log In">Login</button>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Admin</title>
+</head>
+<body>
+    <form action="/addAdmin" method="POST">
+        <div class="input_container">
+            <input type="text" name="username" placeholder="Username" required>
+        </div>
+        <div class="input_container">
+            <input type="password" name="password" placeholder="Password" required>
+        </div>
+        <div class="input_container">
+            <select required name="role">
+                <option value="class">Class event manager</option>
+                <option value="club">Club/committee event manager</option>
+            </select> 
+        </div>
+        <div class="input_container">
+            <input type="text" name="club" placeholder="club/committee if any">
+        </div>
+        <div class="input_container">
+            <select required name="branch">
+                <option value="IT">IT</option>
+                <option value="CSE">CSE</option>
+                <option value="Mechanical">Mechanical</option>
+                <option value="Metalurgy">Metalurgy</option>
+                <option value="ECE">ECE</option>
+                <option value="Mining">Mining</option>
+            </select> 
+        </div>
+        <div class="input_container">
+            <select required name="year">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> 
+        </div>
+
+        <div class="input_container">
+            <button type="submit">Make Admin</button>
+        </div>
+    </form>
+</body>
+</html>
